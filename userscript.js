@@ -2,7 +2,10 @@
 //Ff u steal our code ur an asshole so don't, thx
 //Made by PixelBreeze and Zaro38
 //
-$('#chat-messages').append('<i style="width:33px;height:30px;border-left:3px solid cyan" class="icon icon-emoji-on"></i><div style="color:cyan;height:25px;margin-left:125px;margin-top:7px;">CAS Activated!</div>');
+
+//Startup message
+$('#chat-messages').append('<div style="width:300px;height:30px;border-left:3px solid cyan;"</div><i style="width:33px;height:30px;margin-left:5px;" class="icon icon-emoji-on"></i><div style="color:cyan;height:25px;padding-left:125px;padding-top:7px;">CAS Activated!</div>');
+
 function showCustomStuff() {
 	$('.avatars .menu-points .dropdown dd').append('<div class="row" data-value="custom" id="custom"><span>Custom</span></div>');
 	$('.avatars .menu-points .dropdown dd .row').on('click', function () {

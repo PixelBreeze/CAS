@@ -3,6 +3,8 @@
 //Made by PixelBreeze and Zaro38
 //
 function showCustomStuff() {
+	$('#chat-messages').append('<div id="StartMsg">test<div class="badge-box"><i class="icon icon-soundcloud-favorites"></i></div></div>');
+	document.getElementById("StartMsg").style.color = "#6AC639";
 	$('.avatars .menu-points .dropdown dd').append('<div class="row" data-value="custom" id="custom"><span>Custom</span></div>');
 
 	$('.avatars .menu-points .dropdown dd .row').on('click', function () {

@@ -3,10 +3,11 @@
 //Made by PixelBreeze and Zaro38
 //
 function showCustomStuff() {
-	$('#chat-messages').append('<div id="StartMsg">test<div class="badge-box"><i class="icon icon-soundcloud-favorites"></i></div></div>');
-	document.getElementById("StartMsg").style.color = "#6AC639";
+	//Pixels stupid stuff
+	$('#chat-messages').append('<i style="width:33px;height:30px;border-left:3px solid cyan" class="icon icon-emoji-on"></i><div style="color:cyan;height:25px;margin-left:125px;margin-top:7px;">CAS Activated!</div>');
+	
+	//End of Pixels stupid stuff
 	$('.avatars .menu-points .dropdown dd').append('<div class="row" data-value="custom" id="custom"><span>Custom</span></div>');
-
 	$('.avatars .menu-points .dropdown dd .row').on('click', function () {
 			if (this.id != 'custom') {
 				$('.avatars .menu-points .dropdown dd #custom').removeClass('selected');

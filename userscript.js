@@ -24,9 +24,8 @@ function showCustomStuff() {
 if (typeof CasRunning == 'undefined') {
 	//stylesheet link
 	$('head').append('<link rel="stylesheet" type="text/css" href="https://rawgit.com/PixelBreeze/CAS/master/style.css"/>')
-	
 	//Startup message
-	$('#chat-messages').append('<div id="StartupBorder"></div><i id="StartupIcon"></i><div id="StartupMessage">CAS Activated!</div>');
+	$('#chat-messages').append('<div id="StartupBorder"></div><i id="StartupIcon class="icon icon-inventory-white"></i><div id="StartupMessage">CAS Activated!</div>');
 
 	$('#user-view #user-menu .item').on('click', function () {
 			if ($(this).attr('data-value') == 'inventory' && $('.avatars .menu-points .dropdown dd #custom')[0] == undefined) {

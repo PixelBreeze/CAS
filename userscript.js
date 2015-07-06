@@ -25,14 +25,17 @@ if (typeof CasRunning == 'undefined') {
 	//stylesheet link
 	$('head').append('<link rel="stylesheet" type="text/css" href="https://rawgit.com/PixelBreeze/CAS/master/style.css"/>')
 	//Startup message
-	$('#chat-messages').append('<div id="StartupBorder"></div><i id="StartupIcon class="icon icon-inventory-white"></i><div id="StartupMessage">CAS Activated!</div>');
-
+	//Broken $('#chat-messages').append('<div id="StartupBorder"></div><i id="StartupIcon class="icon icon-inventory-white"></i><div id="StartupMessage">CAS Activated!</div>');
+	$('#chat-messages').append('<div style="width:300px;height:30px;border-left:3px solid cyan;"</div><i style="width:33px;height:30px;margin-left:5px;" class="icon icon-inventory-white"></i><div style="color:cyan;height:25px;padding-left:125px;padding-top:7px;">CAS Activated!</div>');
 	$('#user-view #user-menu .item').on('click', function () {
 			if ($(this).attr('data-value') == 'inventory' && $('.avatars .menu-points .dropdown dd #custom')[0] == undefined) {
 				showCustomStuff();
 			}
 		}
 	);
+}
+// If CASRunning = true do else
+else { 	$('#chat-messages').append('<div style="width:300px;height:30px;border-left:3px solid red;"</div><i style="width:33px;height:30px;margin-left:5px;" class="icon icon-chat-system"></i><div style="color:red;height:25px;padding-left:60px;padding-top:7px;">CAS Already Running! Refresh To Reload!</div>');
 }
 
 if ($('#user-view #user-menu .item.inventory').hasClass('selected') && typeof CasRunning == 'undefined') {

@@ -26,7 +26,7 @@ if (typeof CasRunning == 'undefined') {
 	$('head').append('<link rel="stylesheet" type="text/css" href="https://rawgit.com/PixelBreeze/CAS/master/style.css"/>')
 	
 	//Startup message
-	$('#chat-messages').append('<div style="width:300px;height:30px;border-left:3px solid cyan;"</div><i style="width:33px;height:30px;margin-left:5px;" class="icon icon-emoji-on"></i><div style="color:cyan;height:25px;padding-left:125px;padding-top:7px;">CAS Activated!</div>');
+	$('#chat-messages').append('<div id="StartupBorder"</div><i id="StartupIcon"></i><div id="StartupMessage">CAS Activated!</div>');
 
 	$('#user-view #user-menu .item').on('click', function () {
 			if ($(this).attr('data-value') == 'inventory' && $('.avatars .menu-points .dropdown dd #custom')[0] == undefined) {

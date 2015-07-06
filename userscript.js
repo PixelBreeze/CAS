@@ -3,8 +3,6 @@
 //Made by PixelBreeze and Zaro38
 //
 
-//Startup message
-$('#chat-messages').append('<div style="width:300px;height:30px;border-left:3px solid cyan;"</div><i style="width:33px;height:30px;margin-left:5px;" class="icon icon-emoji-on"></i><div style="color:cyan;height:25px;padding-left:125px;padding-top:7px;">CAS Activated!</div>');
 
 function showCustomStuff() {
 	$('.avatars .menu-points .dropdown dd').append('<div class="row" data-value="custom" id="custom"><span>Custom</span></div>');
@@ -15,7 +13,7 @@ function showCustomStuff() {
 			}
 			else {
 				$('.avatars .menu-points .dropdown dd .row').removeClass('selected');
-				$('.avatars .box .jspContainer .jspPane .grid').html('<div class="cell custom"><div class="top"><div class="avatar"><img/></div></div></div>');
+				$('.avatars .box .jspContainer .jspPane .grid').html('<div class="cell new-custom"><div class="top"><div class="avatar"><img src="http://dl.dropboxusercontent.com/u/67358887/img/plus.png"/></div></div></div>');
 				$('.avatars .menu-points .dropdown dd #custom').addClass('selected');
 				$('.avatars .menu-points .dropdown dt span').html('Custom');
 			}
@@ -24,6 +22,12 @@ function showCustomStuff() {
 };
 
 if (typeof CasRunning == 'undefined') {
+	//stylesheet link
+	$('head').append('<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/PixelBreeze/CAS/master/style.css"/>')
+	
+	//Startup message
+	$('#chat-messages').append('<div style="width:300px;height:30px;border-left:3px solid cyan;"</div><i style="width:33px;height:30px;margin-left:5px;" class="icon icon-emoji-on"></i><div style="color:cyan;height:25px;padding-left:125px;padding-top:7px;">CAS Activated!</div>');
+
 	$('#user-view #user-menu .item').on('click', function () {
 			if ($(this).attr('data-value') == 'inventory' && $('.avatars .menu-points .dropdown dd #custom')[0] == undefined) {
 				showCustomStuff();

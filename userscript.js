@@ -23,7 +23,7 @@ function showCustomStuff() {
 
 if (typeof CasRunning == 'undefined') {
 	//stylesheet link
-	$('head').append('<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/PixelBreeze/CAS/master/style.css"/>')
+	$('head').append('<link rel="stylesheet" type="text/css" href="https://rawgit.com/PixelBreeze/CAS/master/style.css"/>')
 	
 	//Startup message
 	$('#chat-messages').append('<div style="width:300px;height:30px;border-left:3px solid cyan;"</div><i style="width:33px;height:30px;margin-left:5px;" class="icon icon-emoji-on"></i><div style="color:cyan;height:25px;padding-left:125px;padding-top:7px;">CAS Activated!</div>');

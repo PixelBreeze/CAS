@@ -19,7 +19,7 @@ function showCustomStuff() {
 			}
 		}
 	)
-	$('#user-view #user-menu .item').on('click', function () {
+	$('#user-view #user-menu .item').on('click', function () { //On click change avatar to Admin01 XD
 		var currentUsername = API.getUser().username;
 		var x = require("ec0fc/a7b8d/ca484/fc845");
 		for (var i = 0; i < x.images.length; i++) {

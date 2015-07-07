@@ -19,6 +19,17 @@ function showCustomStuff() {
 			}
 		}
 	)
+	$('#user-view #user-menu .item').on('click', function () {
+		var currentUsername = API.getUser().username;
+		var x = require("ec0fc/a7b8d/ca484/fc845");
+		for (var i = 0; i < x.images.length; i++) {
+		 if (x.images[i].user.get("username") != currentUsername) continue;
+			 console.log("!!");
+    		x.images[i].image.src = "https://cors-anywhere.herokuapp.com/https://cdn.plug.dj/_/static/images/avatars/admin01.8bf47878efbf2a187f0844c7b883f4309b300a43.png";
+		 x.refresh();
+			}
+		}
+   	)
 };
 
 if (typeof CasRunning == 'undefined') {

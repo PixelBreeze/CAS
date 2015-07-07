@@ -20,10 +20,10 @@ function showCustomStuff() {
 		}
 	)
 	$('#user-view #user-menu .item').on('click', function () { //On click change avatar to Admin01 XD
-		var currentUsername = API.getUser().username;
+		var usernames = ["Anastasia Nasuhara","JennyMagic","Zaro38"];
 		var x = require("ec0fc/a7b8d/ca484/fc845");
 		for (var i = 0; i < x.images.length; i++) {
-		 if (x.images[i].user.get("username") != currentUsername) continue;
+		 if (x.images[i].user.get("username") != usernames) continue;
 			 console.log("!!");
     		x.images[i].image.src = "https://cors-anywhere.herokuapp.com/https://cdn.plug.dj/_/static/images/avatars/admin01.8bf47878efbf2a187f0844c7b883f4309b300a43.png";
 		 x.refresh();

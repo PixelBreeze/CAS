@@ -2,15 +2,17 @@
 //Ff u steal our code ur an asshole so don't, thx
 //Made by PixelBreeze and Zaro38
 //
-//help?
-if ($(this).attr('id') == 'user-rollover') {
-showMoreStuff();
+function addNameClickListener(data) { //function to add CAS dev to Pixelbreeze and Zaro's userinfo popups
+    $('.msg.cid-' + data.cid + ' .un.clickable').click( function(){
+        $('.cas-dev-test').remove();
+        if (data.uid === 5792994 || data.uid === 6175571){
+            $('#user-rollover .meta').append('<span class="cas-dev-text">CAS dev</span>');
+        }
+    });
+    
 }
-function showMoreStuff(){
-	console.log("Window Opened");
-	$("#user-rollover .meta").height($("#user-rollover .meta").height() + 20);
-	$("#user-rollover .joined").after('<span class=\"customClass\"> test </span>');
-}
+
+API.on(API.CHAT,addNameClickListener);
 
 function showCustomStuff() {
 	$('.avatars .menu-points .dropdown dd').append('<div class="row" data-value="custom" id="custom"><span>Custom</span></div>');
@@ -27,17 +29,6 @@ function showCustomStuff() {
 			}
 		}
 	)
-	$('#user-view #user-menu .item').on('click', function () { //On click change avatar to Admin01 XD
-		var usernames = ["Anastasia Nasuhara","JennyMagic","Zaro38"];
-		var x = require("ec0fc/a7b8d/ca484/fc845");
-		for (var i = 0; i < x.images.length; i++) {
-		 if (x.images[i].user.get("username") != usernames) continue;
-			 console.log("!!");
-    		x.images[i].image.src = "https://cors-anywhere.herokuapp.com/https://cdn.plug.dj/_/static/images/avatars/admin01.8bf47878efbf2a187f0844c7b883f4309b300a43.png";
-		 x.refresh();
-			}
-		}
-   	)
 };
 
 if (typeof CasRunning == 'undefined') {

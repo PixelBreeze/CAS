@@ -2,9 +2,15 @@
 //Ff u steal our code ur an asshole so don't, thx
 //Made by PixelBreeze and Zaro38
 //
-$('head').append('<link rel="stylesheet" type="text/css" href="https://rawgit.com/PixelBreeze/CAS/master/style.css"/>')
-$("#user-rollover .meta").height($("#user-rollover .meta").height() + 20);
-$("#user-rollover .joined").after("<span class=\"customClass\" style="bottom: 5px;color: #808691;font-weight: 400;position: absolute;left: 109px;font-size: 12px;"> test </span>");
+//help?
+if ($(this).attr('id') == 'user-rollover') {
+showMoreStuff();
+}
+function showMoreStuff(){
+	console.log("Window Opened");
+	$("#user-rollover .meta").height($("#user-rollover .meta").height() + 20);
+	$("#user-rollover .joined").after("<span class=\"customClass\"> test </span>");
+}
 
 function showCustomStuff() {
 	$('.avatars .menu-points .dropdown dd').append('<div class="row" data-value="custom" id="custom"><span>Custom</span></div>');

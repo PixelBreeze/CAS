@@ -18,3 +18,11 @@
   padding-left:125px;
   padding-top:7px;
 }
+span.customClass {
+  bottom: 5px;
+  color: #808691;
+  font-weight: 400;
+  position: absolute;
+  left: 109px;
+  font-size: 12px;
+}

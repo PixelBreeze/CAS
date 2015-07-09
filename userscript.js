@@ -4,7 +4,7 @@
 //
 function addNameClickListener(data) { //function to add CAS dev to Pixelbreeze and Zaro's userinfo popups
     $('.msg.cid-' + data.cid + ' .un.clickable').click( function(){
-        $('.cas-dev-test').remove();
+        $('.cas-dev-text').remove();
         if (data.uid === 5792994 || data.uid === 6175571){
             $('#user-rollover .meta').append('<span class="cas-dev-text">CAS dev</span>');
         }

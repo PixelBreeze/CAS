@@ -9,7 +9,7 @@ showMoreStuff();
 function showMoreStuff(){
 	console.log("Window Opened");
 	$("#user-rollover .meta").height($("#user-rollover .meta").height() + 20);
-	$("#user-rollover .joined").after("<span class=\"customClass\"> test </span>");
+	$("#user-rollover .joined").after('<span class=\"customClass\"> test </span>');
 }
 
 function showCustomStuff() {
